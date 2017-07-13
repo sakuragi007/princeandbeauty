@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
     <link rel="icon" href="../../favicon.ico">
-    <title>prince and beauty-王子与美人</title>
-    <meta name="keywords" content="prince and beauty,princeandbeauty,王子与美人"/>
-    <meta name="description" content="prince and beauty，王子与美人，记录着美好的生活。"/>
+    <title>prince and beauty 王子与美人</title>
+    <meta name="keywords" content="王子与美人,prince and beauty,princeandbeauty"/>
+    <meta name="description" content="王子与美人,记录着美好的生活。"/>
     <meta http-equiv="Cache-Control" content="no-transform"/>
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
     <meta name="renderer" content="webkit">
@@ -40,17 +40,24 @@
 <div class="container">
 
     <div class="row">
+
         <div class="col-sm-8 blog-main">
-            <div id="bloglist">
-                <docdetail v-for="doc in pageDoc" v-bind:doc="doc"></docdetail>
-            </div>
+
+            <div class="blog-post">
+                <h2 class="blog-post-title">title</h2>
+                <p class="blog-post-meta">createTime<a href="#">docBy</a></p>
+
+                <p>This blog.</p>
+                <hr>
+            </div><!-- /.blog-post -->
+
             <nav>
                 <ul class="pager">
-                    <li><a href="#" onclick="javascript:fetchAllPre();">上一页</a></li>
-                    <li><a href="#" onclick="javascript:fetchAllNex();">下一页</a></li>
-                    <li><a href="#" onclick="javascript:showForm('addForm');">写文章</a></li>
+                    <li><a href="#">Previous</a></li>
+                    <li><a href="#">Next</a></li>
                 </ul>
             </nav>
+
         </div><!-- /.blog-main -->
 
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
@@ -65,28 +72,10 @@
                 </ol>
             </div>
         </div><!-- /.blog-sidebar -->
-    </div><!-- /.row -->
 
-    <div class="row" id="addForm" style="display:none">
-        <form role="form">
-            <div class="form-group">
-                <label for="title">标题</label>
-                <input type="text" class="form-control" id="title" placeholder="请输入标题">
-            </div>
-            <div class="form-group">
-                <label for="description">文本框</label>
-                <textarea class="form-control" rows="3" id="description"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="title">标签</label>
-                <input type="text" class="form-control" id="tags" placeholder="请输入标签，空格分隔">
-            </div>
-            <button type="button" class="btn btn-default" onclick="javascript:addDoc()">提交</button>
-        </form>
     </div><!-- /.row -->
 
 </div><!-- /.container -->
-
 
 <footer class="blog-footer">
     <p>by <a href="mailto:yingmuting@126.com" target="_blank" class="btn btn-primary">@yingmuting@126.com</a></p>
@@ -103,8 +92,7 @@
 <script src="js/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="js/ie10-viewport-bug-workaround.js"></script>
-<script src="https://unpkg.com/vue/dist/vue.js"></script>
-<script src="js/index.js"></script>
+<script src="js/detail.js"></script>
 
 </body>
 </html>

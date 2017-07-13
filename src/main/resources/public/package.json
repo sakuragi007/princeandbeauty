@@ -1,0 +1,23 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sakuragi007/princeandbeauty.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sakuragi007/princeandbeauty/issues"
+  },
+  "homepage": "https://github.com/sakuragi007/princeandbeauty#readme",
+  "description": "",
+  "dependencies": {
+    "vue": "^2.3.4",
+    "whatwg-fetch": "^2.0.3"
+  }
+}
