@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 import com.mongodb.DB;
 
 /**
- * @author 王寒冰(hzwanghanbing02@corp.netease.com)
+ * @author 王寒冰
  */
 @Component
 public class MongoDb {

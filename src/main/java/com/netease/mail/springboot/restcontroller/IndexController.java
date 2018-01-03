@@ -25,7 +25,7 @@ import com.netease.mail.springboot.pojo.Doc;
 import com.netease.mail.springboot.repository.DocRepository;
 
 /**
- * @author 王寒冰(hzwanghanbing02@corp.netease.com)
+ * @author 王寒冰
  */
 @RestController
 public class IndexController {

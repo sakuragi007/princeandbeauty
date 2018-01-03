@@ -12,7 +12,7 @@ import org.springframework.boot.ExitCodeGenerator;
 import org.springframework.stereotype.Component;
 
 /**
- * @author 王寒冰(hzwanghanbing02@corp.netease.com)
+ * @author 王寒冰
  */
 @Component
 public class BeforeDestroyBean implements DisposableBean,ExitCodeGenerator{

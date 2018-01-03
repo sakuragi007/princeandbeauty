@@ -13,7 +13,7 @@ import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationListener;
 
 /**
- * @author 王寒冰(hzwanghanbing02@corp.netease.com)
+ * @author 王寒冰
  */
 @SpringBootApplication
 public class Application {

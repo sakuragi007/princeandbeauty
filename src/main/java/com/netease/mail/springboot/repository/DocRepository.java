@@ -11,7 +11,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import com.netease.mail.springboot.pojo.Doc;
 
 /**
- * @author 王寒冰(hzwanghanbing02@corp.netease.com)
+ * @author 王寒冰
  */
 public interface DocRepository extends MongoRepository<Doc, String> {
 

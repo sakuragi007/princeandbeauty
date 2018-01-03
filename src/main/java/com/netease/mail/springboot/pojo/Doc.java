@@ -10,7 +10,7 @@ import java.util.Arrays;
 import org.springframework.data.annotation.Id;
 
 /**
- * @author 王寒冰(hzwanghanbing02@corp.netease.com)
+ * @author 王寒冰
  */
 public class Doc {
     @Id

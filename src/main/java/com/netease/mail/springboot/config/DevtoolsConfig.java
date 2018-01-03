@@ -11,7 +11,7 @@ import org.springframework.context.annotation.PropertySources;
 import org.springframework.stereotype.Component;
 
 /**
- * @author 王寒冰(hzwanghanbing02@corp.netease.com)
+ * @author 王寒冰
  */
 @Component
 @ConfigurationProperties(prefix = "app.devtools")

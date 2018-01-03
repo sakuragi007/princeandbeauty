@@ -7,7 +7,7 @@
 package com.netease.mail.springboot.restcontroller;
 
 /**
- * @author 王寒冰(hzwanghanbing02@corp.netease.com)
+ * @author 王寒冰
  */
 public class IndexVO {
 
