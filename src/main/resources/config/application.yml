@@ -13,4 +13,4 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb://princeandbeauty.com:27017/test
+      uri: mongodb://whb:yingmuting@princeandbeauty.com:27017/admin

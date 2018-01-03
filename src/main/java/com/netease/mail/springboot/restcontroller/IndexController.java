@@ -73,7 +73,8 @@ public class IndexController {
 
     @RequestMapping(value = "del/{docId}")
     public String del(@PathVariable String docId) {
-        docRepository.deleteById(docId);
+        //docRepository.deleteById(docId);
         return "success";
     }
+
 }

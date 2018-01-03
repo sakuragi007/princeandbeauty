@@ -1,9 +1,13 @@
+$(document).ready(function() {
+  $('#description').summernote({height:260});
+});
+
 Vue.component('docdetail', {
   props: ['doc'],
   template: '<div id="blogdetail" class="blog-post">'+
             '<h2 class="blog-post-title">{{ doc.title }}</h2>'+
             '<p class="blog-post-meta">created by<a href="#">{{ doc.by }}</a> {{ doc.likes }}</p>'+
-            '<p>{{ doc.description }}</p>'+'标签:{{ doc.tags }}<br>'+
+            '<p v-html="doc.description"></p>'+'标签:{{ doc.tags }}<br>'+
             '<button onclick="del(this)" :value="doc.id">删除文章</button>'+
             '<hr></div>'
 })
@@ -83,7 +87,7 @@ function addDoc(){
       },
       body: JSON.stringify({
           title: document.getElementById('title').value,
-          description: document.getElementById('description').value,
+          description: $('#description').code(),
           tags: document.getElementById('tags').value.split(" ")
       })
     }).then(function(response) {

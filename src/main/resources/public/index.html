@@ -24,6 +24,9 @@
     <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="http://sdk.talkingdata.com/app/h5/v1?appid=5B5349D478A14F36A4D4591D8A96D825&vn=1.0.0&vc=1.0.0"></script>
+    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/summernote/0.6.16/summernote.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/summernote/0.6.16/summernote-bs3.css">
 </head>
 
 <body>
@@ -48,7 +51,7 @@
                 <ul class="pager">
                     <li><a href="#" onclick="javascript:fetchAllPre();">上一页</a></li>
                     <li><a href="#" onclick="javascript:fetchAllNex();">下一页</a></li>
-                    <li><a href="#" onclick="javascript:showForm('addForm');">写文章</a></li>
+                    <li><a onclick="javascript:showForm('addForm');">写文章</a></li>
                 </ul>
             </nav>
         </div><!-- /.blog-main -->
@@ -74,8 +77,8 @@
                 <input type="text" class="form-control" id="title" placeholder="请输入标题">
             </div>
             <div class="form-group">
-                <label for="description">文本框</label>
-                <textarea class="form-control" rows="3" id="description"></textarea>
+                <label for="description">文章内容</label>
+                <textarea class="summernote" rows="3" id="description"></textarea>
             </div>
             <div class="form-group">
                 <label for="title">标签</label>
@@ -89,7 +92,10 @@
 
 
 <footer class="blog-footer">
-    <p>by <a href="mailto:yingmuting@126.com" target="_blank" class="btn btn-primary">@yingmuting@126.com</a></p>
+    <p>@ <a href="mailto:yingmuting@126.com" target="_blank" class="btn btn-primary">yingmuting@126.com</a></p>
+    <div style="width:300px;margin:0 auto; padding:20px 0;">
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010802008790" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="" style="float:left;"/><p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">浙公网安备 33010802008790号</p></a>
+    </div>
 </footer>
 
 
@@ -105,6 +111,9 @@
 <script src="js/ie10-viewport-bug-workaround.js"></script>
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
 <script src="js/index.js"></script>
+
+<!-- include summernote css/js-->
+<script src="http://cdn.bootcss.com/summernote/0.6.16/summernote.js"></script>
 
 </body>
 </html>
